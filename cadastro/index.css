@@ -1,300 +1,317 @@
 :root {
-    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-      "Source Han Sans CN", sans-serif;
-  }
-  
-  .main-container {
-    overflow: hidden;
-  }
-  
-  .main-container,
-  .main-container * {
-    box-sizing: border-box;
-  }
-  
-  input,
-  select,
-  textarea,
-  button {
-    outline: 0;
-  }
-  
-  .main-container {
-    position: relative;
-    width: 414px;
-    height: 896px;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0);
-    overflow: hidden;
-  }
-  .root {
-    position: absolute;
-    height: 896px;
-    top: 0;
-    right: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0);
-  }
-  .button {
-    position: relative;
-    width: 414px;
-    height: 235px;
-    margin: 0 0 0 0;
-    background: rgba(0, 0, 0, 0);
-    z-index: 1;
-    overflow: visible auto;
-  }
-  .background {
-    position: relative;
-    width: 413px;
-    height: 234px;
-    margin: 0 0 0 0;
-    background: rgba(0, 0, 0, 0);
-    z-index: 4;
-    overflow: visible auto;
-  }
-  .groups {
-    position: relative;
-    width: 414px;
-    height: 68px;
-    margin: 32px 0 0 0;
-    background: rgba(0, 0, 0, 0);
-    z-index: 3;
-  }
-  .image {
-    position: absolute;
-    width: 17px;
-    height: 32px;
-    right: 356px;
-    bottom: 18px;
-    background: url(./assets/images/962962b2b20ae4bc7a971d8cb1b2fa40ebec7761.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 37;
-  }
-  .image-1 {
-    position: absolute;
-    width: 42px;
-    height: 24px;
-    right: 41px;
-    bottom: 23px;
-    background: url(./assets/images/d1f06be49e88fe234fa93448aea0e78b0fbd3158.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 36;
-  }
-  .groups-2 {
-    position: relative;
-    width: 414px;
-    height: 130px;
-    margin: 5px 0 0 0;
-    font-size: 0px;
-    background: rgba(0, 0, 0, 0);
-    z-index: 2;
-    overflow: visible auto;
-  }
-  .create-account {
-    display: block;
-    position: relative;
-    height: 37px;
-    margin: 15px 0 0 42px;
-    color: #f4f3fa;
-    font-family: Inter, var(--default-font-family);
-    font-size: 34.900001525878906px;
-    font-weight: 600;
-    line-height: 37px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 35;
-  }
-  .your-account {
-    display: block;
-    position: relative;
-    height: 36px;
-    margin: 11px 0 0 40px;
-    color: #fafafd;
-    font-family: Inter, var(--default-font-family);
-    font-size: 29.399999618530273px;
-    font-weight: 600;
-    line-height: 35.581px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 34;
-  }
-  .groups-3 {
-    position: relative;
-    width: 414px;
-    height: 525px;
-    margin: 43px 0 0 0;
-    background: rgba(0, 0, 0, 0);
-    z-index: 6;
-    overflow: visible auto;
-  }
-  .groups-4 {
-    position: relative;
-    width: 414px;
-    height: 82px;
-    margin: 0 0 0 0;
-    background: rgba(0, 0, 0, 0);
-    z-index: 30;
-    overflow: visible auto;
-  }
-  .text {
-    position: relative;
-    width: 334px;
-    height: 60px;
-    margin: 15px 0 0 39px;
-    background: rgba(0, 0, 0, 0);
-    z-index: 31;
-    overflow: visible auto;
-  }
-  .background-5 {
-    position: relative;
-    width: 326px;
-    height: 52px;
-    margin: 5px 0 0 5px;
-    background: #ffffff;
-    z-index: 32;
-    overflow: hidden;
-    border-radius: 22px;
-  }
-  .email {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    height: 17px;
-    right: 245px;
-    bottom: 21px;
-    color: #bababa;
-    font-family: Inter, var(--default-font-family);
-    font-size: 14.5px;
-    font-weight: 600;
-    line-height: 17px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 33;
-  }
-  .groups-6 {
-    position: relative;
-    width: 414px;
-    height: 83px;
-    margin: 1px 0 0 0;
-    background: rgba(0, 0, 0, 0);
-    z-index: 26;
-    overflow: visible auto;
-  }
-  .text-7 {
-    position: relative;
-    width: 334px;
-    height: 60px;
-    margin: 19px 0 0 39px;
-    background: rgba(0, 0, 0, 0);
-    z-index: 27;
-    overflow: visible auto;
-  }
-  .background-8 {
-    position: relative;
-    width: 326px;
-    height: 52px;
-    margin: 5px 0 0 5px;
-    background: #ffffff;
-    z-index: 28;
-    overflow: hidden;
-    border-radius: 22px;
-  }
-  .full-name {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    height: 18px;
-    right: 208px;
-    bottom: 20px;
-    color: #d4d4d4;
-    font-family: Inter, var(--default-font-family);
-    font-size: 13.5px;
-    font-weight: 600;
-    line-height: 16.338px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 29;
-  }
-  .groups-9 {
-    position: relative;
-    width: 414px;
-    height: 79px;
-    margin: 5px 0 0 0;
-    background: rgba(0, 0, 0, 0);
-    z-index: 22;
-    overflow: visible auto;
-  }
-  .text-a {
-    position: relative;
-    width: 335px;
-    height: 59px;
-    margin: 18px 0 0 39px;
-    background: rgba(0, 0, 0, 0);
-    z-index: 23;
-    overflow: visible auto;
-  }
-  .background-b {
-    position: relative;
-    width: 326px;
-    height: 51px;
-    margin: 5px 0 0 5px;
-    background: #fefefe;
-    z-index: 24;
-    overflow: hidden;
-    border-radius: 22px;
-  }
-  .username {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    height: 18px;
-    right: 207px;
-    bottom: 20px;
-    color: #cdcdcd;
-    font-family: Inter, var(--default-font-family);
-    font-size: 13.5px;
-    font-weight: 600;
-    line-height: 16.338px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 25;
-  }
-  .groups-c {
-    position: relative;
-    width: 414px;
-    height: 80px;
-    margin: 7px 0 0 0;
-    background: rgba(0, 0, 0, 0);
-    z-index: 16;
-    overflow: visible auto;
-  }
-  .text-d {
-    position: relative;
-    width: 334px;
-    height: 59px;
-    margin: 19px 0 0 39px;
-    background: rgba(0, 0, 0, 0);
-    z-index: 17;
-    overflow: hidden;
-  }
-  .text-input {
-    position: absolute;
-    width: 334px;
-    height: 59px;
-    top: 0;
-    left: 0;
-    background: transparent;
-    border: none;
-    z-index: 21;
-    outline: none;
-  }
-  .background-e {
-    position: relative;
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 414px;
+  height: 896px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+.root {
+  height: 896px;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #E8E8E8;
+}
+.background {
+  position: relative;
+  width: 100%;
+  background: #B9AEF8;
+  z-index: 2;
+}
+.groups {
+  position: relative;
+  width: 414px;
+  height: 71px;
+  margin: 29px 0 0 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 20;
+}
+.image {
+  position: absolute;
+  width: 17px;
+  height: 32px;
+  right: 356px;
+  bottom: 18px;
+  background: url(./assets/images/b2f69524a37dcf16c939e9e416618c43df6367b7.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 22;
+}
+.image-1 {
+  position: absolute;
+  width: 42px;
+  height: 25px;
+  right: 41px;
+  bottom: 22px;
+  background: url(./assets/images/ef1d3eaf7503c63b6551f33b78849e7bde0528b6.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 21;
+}
+.groups-2 {
+  position: relative;
+  width: 414px;
+  height: 137px;
+  margin: -2px 0 0 0;
+  font-size: 0px;
+  background: rgba(0, 0, 0, 0);
+  z-index: 17;
+  overflow: visible auto;
+}
+.forgot {
+  display: block;
+  position: relative;
+  height: 35px;
+  margin: 19px 0 0 44px;
+  color: #fff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 33.900001525878906px;
+  font-weight: bold;
+  line-height: 35px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 19;
+}
+.password {
+  display: block;
+  position: relative;
+  /* height: 32px; */
+  margin: 15px 0 0 43px;
+  color: #FFF;
+  font-family: Inter, var(--default-font-family);
+  font-size: 29.399999618530273px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 18;
+}
+.groups-3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 45px 0 0 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-4 {
+  position: relative;
+  width: 75px;
+  height: 85px;
+  margin: 19px 0 0 169px;
+  background: url(./assets/images/bb2a26fe0e0455b850becda5b677924bbd8ae119.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 16;
+}
+.trouble-logging {
+  display: block;
+  position: relative;
+  height: 23px;
+  margin: 35px 0 0 108px;
+  color: #181818;
+  font-family: Inter, var(--default-font-family);
+  font-size: 18.600000381469727px;
+  font-weight: bolder;
+  line-height: 22.51px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 15;
+}
+.enter-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 285px;
+  height: 42px;
+  margin: 20px 0 0 65px;
+  color: #767171;
+  font-family: Inter, var(--default-font-family);
+  font-size: 16.5px;
+  font-weight:100;
+  line-height: 19.969px;
+  text-align: center;
+  text-overflow: initial;
+  z-index: 14;
+  overflow: hidden;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: 59px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0);
+  z-index: 11;
+  margin-bottom: 16px;
+}
+.background-5 {
+  position: relative;
+  width: 326px;
+  height: 51px;
+  margin:0 auto;
+  background: #ffffff;
+  z-index: 12;
+  overflow: hidden;
+  border-radius: 22px;
+}
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 17px;
+  right: 245px;
+  bottom: 21px;
+  color: #bababa;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 17px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 13;
+}
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 59px;
+
+  background: rgba(0, 0, 0, 0);
+  z-index: 8;
+
+}
+.background-6 {
+  position: relative;
+  width: 328px;
+  height: 52px;
+  margin: 4px 0 0 4px;
+  cursor: pointer;
+  background: #8376d1;
+  border: none;
+  z-index: 9;
+  border-radius: 23px;
+}
+.reset-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  right: 76px;
+  bottom: 17px;
+  color: #FFF;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20.399999618530273px;
+  font-weight: 100;
+  line-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 10;
+}
+.logo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+}
+.groups-7 {
+  width: 414px;
+  height: auto;
+  margin: 179px 0 0 0;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  z-index: 1;
+}
+.button-8 {
+  position: absolute;
+  width: 414px;
+  height: 64px;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 3;
+}
+.background-9 {
+  position: relative;
+  width: 413px;
+  height: 63px;
+  margin: 0 0 0 0;
+  background: #d33333;
+  border-radius: 50px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.return-to-login {
+  color: #FFF;
+  font-family: Inter, var(--default-font-family);
+  font-size: 18.600000381469727px;
+  font-weight: 100;
+  line-height: 22.51px;
+  text-align: center;
+  z-index: 5;
+}
+.background-a {
+  position: absolute;
+  width: 414px;
+  height: 836px;
+  right: 0;
+  bottom: 60px;
+  background: url(./assets/images/e3958ac46ee96aa2b9d25810989a009153ad6f0a.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 6;
+}
+
+input {
+  padding: 15px;
+  background: #FFF;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+
+input {
+    font-size: 0.9em;
+}
+}
