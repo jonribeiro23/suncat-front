@@ -12,18 +12,21 @@
         }
         body {
             font-family: 'Roboto', sans-serif;
+            background-color: #e8e8e8;
         }
         .question-title {
             font-family: 'Eastman Roman Alternate', serif; /* Updated to use the local font */
         }
     </style>
 </head>
-<body class="bg-gray-200 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-6 rounded-lg shadow-lg text-center w-80">
-        <div class="bg-purple-200 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-            <span class="text-purple-600 text-2xl font-bold">449</span>
+<body class=" flex items-center justify-center min-h-screen">
+    <div class=" p-6 rounded-lg shadow-lg text-center w-80 h-screen"> <!-- Updated to include h-screen -->
+        <div class="flex items-end justify-between mb-20">
+            <div class="bg-purple-200 rounded-full w-16 h-16 flex items-center justify-center mr-4">
+                <span class="text-purple-600 text-2xl font-bold">449</span>
+            </div>
+            <h1 class="question-title text-purple-600 text-2xl">Question:</h1>
         </div>
-        <h1 class="question-title text-purple-600 text-2xl mb-4">Pergunta:</h1>
         <div class="bg-red-500 text-white p-4 rounded-lg mb-6">
             Qual das seguintes substâncias é considerada uma base de acordo com a teoria de Arrhenius?
         </div>
@@ -41,6 +44,29 @@
                 D) CH<sub>4</sub>
             </button>
         </div>
+
+        <div class="flex justify-between max-w-md mb-8 ml-40 mt-20">
+            <div class="flex flex-col justify-center">
+                <button
+                    class="text-yellow-200 rounded-full  mb-2"
+                    onclick="window.location.href='./start.html';" 
+                    >
+                    <img src="./img/menu_buttons.png" alt=""  width="80">
+                </button>
+                <button
+                    onclick="window.location.href='./start.html';" 
+                    class="text-yellow-200 rounded-full  mb-2">
+                    <img src="./img/back_buttonpng.png" alt="" width="80">
+                </button>
+                <button
+                    onclick="window.location.href='./login.html';" 
+                    class="text-yellow-200 rounded-full  mb-2">
+                    <img src="./img/quit_button.png" alt="" width="80">
+                </button>
+            </div>
+        </div>
     </div>
+
+    
 </body>
 </html>
