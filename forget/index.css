@@ -30,21 +30,17 @@
     overflow: hidden;
   }
   .root {
-    position: absolute;
     height: 896px;
     top: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0);
+    background: #E8E8E8;
   }
   .background {
     position: relative;
-    width: 413px;
-    height: 234px;
-    margin: 0 0 0 0;
+    width: 100%;
     background: #d33333;
     z-index: 2;
-    overflow: visible auto;
   }
   .groups {
     position: relative;
@@ -103,12 +99,12 @@
   .password {
     display: block;
     position: relative;
-    height: 32px;
+    /* height: 32px; */
     margin: 15px 0 0 43px;
-    color: #fbf3f3;
+    color: #FFF;
     font-family: Inter, var(--default-font-family);
     font-size: 29.399999618530273px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 32px;
     text-align: left;
     white-space: nowrap;
@@ -117,7 +113,7 @@
   .groups-3 {
     position: relative;
     width: 414px;
-    height: 403px;
+    height: auto;
     margin: 16px 0 0 0;
     background: rgba(0, 0, 0, 0);
     z-index: 7;
@@ -141,7 +137,7 @@
     color: #181818;
     font-family: Inter, var(--default-font-family);
     font-size: 18.600000381469727px;
-    font-weight: 600;
+    font-weight: bolder;
     line-height: 22.51px;
     text-align: left;
     white-space: nowrap;
@@ -155,10 +151,10 @@
     width: 285px;
     height: 42px;
     margin: 20px 0 0 65px;
-    color: #484848;
+    color: #767171;
     font-family: Inter, var(--default-font-family);
     font-size: 16.5px;
-    font-weight: 600;
+    font-weight:100;
     line-height: 19.969px;
     text-align: center;
     text-overflow: initial;
@@ -224,24 +220,32 @@
   .reset-password {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    position: absolute;
+    justify-content: center;
     height: 22px;
     right: 76px;
     bottom: 17px;
-    color: #e5e2f5;
+    color: #FFF;
     font-family: Inter, var(--default-font-family);
     font-size: 20.399999618530273px;
-    font-weight: 600;
+    font-weight: 100;
     line-height: 22px;
-    text-align: left;
+    text-align: center;
     white-space: nowrap;
     z-index: 10;
   }
+  .logo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
   .groups-7 {
-    position: relative;
     width: 414px;
-    height: 64px;
+    height: auto;
     margin: 179px 0 0 0;
     cursor: pointer;
     background: rgba(0, 0, 0, 0);
@@ -263,23 +267,19 @@
     height: 63px;
     margin: 0 0 0 0;
     background: #d33333;
+    border-radius: 50px;
     z-index: 4;
-  }
-  .return-to-login {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    height: 25px;
-    right: 93px;
-    bottom: 15px;
-    color: #f5d3d3;
+    justify-content: center;
+  }
+  .return-to-login {
+    color: #FFF;
     font-family: Inter, var(--default-font-family);
     font-size: 18.600000381469727px;
-    font-weight: 600;
+    font-weight: 100;
     line-height: 22.51px;
-    text-align: left;
-    white-space: nowrap;
+    text-align: center;
     z-index: 5;
   }
   .background-a {
@@ -293,4 +293,20 @@
     background-size: cover;
     z-index: 6;
   }
+
+  input[type="email"] {
+    padding: 15px;
+    background: #FFF;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 1em;
+    width: 100%;
+}
   
+@media (max-width: 500px) {
+ 
+  input[type="email"] {
+      font-size: 0.9em;
+  }
+}
