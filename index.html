@@ -39,18 +39,6 @@
             width: 150px;
         }
 
-        h1 {
-            font-size: 4em;
-            color: #d32f2f;
-        }
-
-        h2 {
-            font-size: 2em;
-            font-weight: 300;
-            color: #d32f2f;
-            margin-bottom: 20px;
-        }
-
         form {
             z-index: 999999;
             position: relative;
@@ -71,10 +59,6 @@
             font-size: 1em;
         }
 
-        input[type="checkbox"] {
-            margin-right: 4px;
-        }
-
         .remember-me {
             display: flex;
             align-items: center;
@@ -85,12 +69,6 @@
         .remember-me label {
             font-size: 0.9em;
             color: #555;
-        }
-
-        .forgot-password, .signup {
-            font-size: 0.9em;
-            color: #d32f2f;
-            text-decoration: none;
         }
 
         button {
@@ -115,14 +93,6 @@
         }
 
         @media (max-width: 500px) {
-            h1 {
-                font-size: 1.5em;
-            }
-
-            h2 {
-                font-size: 1em;
-            }
-
             input[type="email"], input[type="password"] {
                 font-size: 0.9em;
             }
@@ -132,12 +102,12 @@
             }
         }
 
-        #checkbox{
+        #checkbox {
             display: flex;
             align-items: center;
         }
 
-        #other-color{
+        #other-color {
             background-color: #8376D1;
             width: 100%;
             height: 230px;
@@ -161,10 +131,6 @@
             bottom: 30px;
             transform: translateX(-50%);
             font-size: 17px;
-        }
-
-        .toast.success {
-            background-color: #4CAF50;
         }
 
         .toast.error {
@@ -201,20 +167,19 @@
                     <input type="checkbox" id="remember">
                     <label for="remember">Remember Me</label>
                 </div>
-                <a href="forget" class="forgot-password">Forgot Password?</a>
+                <a href="forget.html" class="forgot-password">Forgot Password?</a>
             </div>
            
             <button type="submit">Login</button>
 
             <div class="footer">
-                <p>Don't have an account? <a href="cadastro/index.html">Create an account</a></p>
+                <p>Don't have an account? <a href="cadastro.html">Create an account</a></p>
             </div>
         </form>
         <div id="other-color"></div>
     </div>
 
-    <!-- Toasts -->
-    <div id="toastSuccess" class="toast success">Login realizado com sucesso!</div>
+    <!-- Toast de erro -->
     <div id="toastError" class="toast error">Erro ao realizar login!</div>
 
     <script>
@@ -234,28 +199,19 @@
                     mode: 'no-cors' // Modo no-cors para evitar o problema de CORS
                 });
 
-                if (response.ok) {
-                    showToast('success', 'Login realizado com sucesso!');
-                    setTimeout(() => {
-                        window.location.href = 'start.html'; // Redirecionar após 3 segundos
-                    }, 3000);
+                if (!response.ok) {
+                    showToast('Erro ao realizar login. Verifique suas credenciais.');
                 } else {
-                    showToast('error', 'Erro ao realizar login. Verifique suas credenciais.');
+                    window.location.href = 'start.html'; // Redirecionar em caso de sucesso
                 }
             } catch (error) {
-                showToast('error', 'Erro ao se conectar ao servidor.');
+                showToast('Erro ao se conectar ao servidor.');
             }
         });
 
-        // Função para exibir os toasts
-        function showToast(type, message) {
-            let toastElement;
-            if (type === 'success') {
-                toastElement = document.getElementById('toastSuccess');
-            } else if (type === 'error') {
-                toastElement = document.getElementById('toastError');
-            }
-
+        // Função para exibir o toast de erro
+        function showToast(message) {
+            const toastElement = document.getElementById('toastError');
             toastElement.textContent = message; // Atualiza a mensagem
             toastElement.classList.add('show');
 
