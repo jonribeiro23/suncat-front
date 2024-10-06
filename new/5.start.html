@@ -13,36 +13,71 @@
         body {
             font-family: 'Press Start 2P', cursive;
         }
+
+        /* General button styles */
+    button {
+    cursor: pointer;
+    }
+
+    /* Styles for the level buttons */
+    .level-btn {
+    background-color: #9b59b6; /* Purple color */
+    color: white;
+    padding: 10px 30px;
+    border-radius: 9999px; /* Rounded full */
+    display: block; /* Ensures buttons stack vertically */
+    width: fit-content;
+    margin-bottom: 10px; /* Adds spacing between buttons */
+    }
+
+    /* Container for the level buttons (optional if using space-y-4 in Tailwind) */
+    .space-y-4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    }
+
+    /* Styles for menu buttons */
+    .menu-buttons {
+    position: fixed; /* Fixes the buttons in the viewport */
+    bottom: 20px; /* Space from bottom of the screen */
+    right: 20px; /* Space from the right of the screen */
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    }
+
+    .menu-btn {
+    background-color: #34495e; /* Darker button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 9999px; /* Rounded full */
+    margin-bottom: 10px; /* Adds spacing between buttons */
+    }
+
   </style>
  </head>
  <body class="bg-gray-200 flex flex-col items-center justify-center min-h-screen">
   <div class="mb-8">
-   <img alt="Pixel art button with text LEVEL and a cursor clicking on it" class="mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/xMpmxbOpKHqyPJucxifXezUQzgca8Cj2KdaI7EPeIyR1AzHnA.jpg" width="200"/>
+   <img alt="Pixel art button with text LEVEL and a cursor clicking on it" class="mx-auto" height="50" src="https://media-private.canva.com/RKJqE/MAFZs9RKJqE/1/s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20241005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241005T053515Z&X-Amz-Expires=83265&X-Amz-Signature=a19d4129a5bcbb3f40b70656962a1b49def03056f86a8ca94af5d72559dfda84&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sun%2C%2006%20Oct%202024%2004%3A43%3A00%20GMT" width="200"/>
   </div>
   <div class="space-y-4 mb-8">
-   <button class="bg-purple-400 text-white py-2 px-8 rounded-full">
-    Nível fácil
-   </button>
-   <button class="bg-purple-400 text-white py-2 px-8 rounded-full">
-    Nível médio
-   </button>
-   <button class="bg-purple-400 text-white py-2 px-8 rounded-full">
-    Nível difícil
-   </button>
+    <button class="level-btn">
+      Nível fácil
+    </button>
+    <button class="level-btn">
+      Nível médio
+    </button>
+    <button class="level-btn">
+      Nível difícil
+    </button>
   </div>
   <div class="flex flex-col items-center">
    <img alt="Pixel art of a cat sitting in front of a large yellow moon" class="mb-8" height="100" src="https://storage.googleapis.com/a1aa/image/fY0wPubfeidBNpuJ4WPx2qWg4f8ViRGDX9qGi33JljunBmPOB.jpg" width="100"/>
-   <div class="space-y-2">
-    <button class="bg-pink-400 text-yellow-200 py-1 px-4 rounded-full">
-     MENU
-    </button>
-    <button class="bg-pink-400 text-yellow-200 py-1 px-4 rounded-full">
-     BACK
-    </button>
-    <button class="bg-pink-400 text-yellow-200 py-1 px-4 rounded-full">
-     QUIT
-    </button>
-   </div>
+   <div class="menu-buttons">
+    <button class="menu-btn">MENU</button>
+    <button class="menu-btn">BACK</button>
+    <button class="menu-btn">QUIT</button>
+  </div>
   </div>
  </body>
 </html>
