@@ -25,6 +25,8 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true  # Habilita o GitHub Pages caso não esteja configurado
 
       - name: List files
         run: ls -la  # Verifique o conteúdo do diretório
