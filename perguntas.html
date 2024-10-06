@@ -1,0 +1,46 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Eastman Roman Alternate';
+            src: url('./fonts/eastman_alternate/EastmanAlternateTrial-Bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .question-title {
+            font-family: 'Eastman Roman Alternate', serif; /* Updated to use the local font */
+        }
+    </style>
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center w-80">
+        <div class="bg-purple-200 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <span class="text-purple-600 text-2xl font-bold">449</span>
+        </div>
+        <h1 class="question-title text-purple-600 text-2xl mb-4">Pergunta:</h1>
+        <div class="bg-red-500 text-white p-4 rounded-lg mb-6">
+            Qual das seguintes substâncias é considerada uma base de acordo com a teoria de Arrhenius?
+        </div>
+        <div class="space-y-4">
+            <button class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+                A) HCl
+            </button>
+            <button class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+                B) NaOH
+            </button>
+            <button class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+                C) CO<sub>2</sub>
+            </button>
+            <button class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+                D) CH<sub>4</sub>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
