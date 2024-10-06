@@ -105,22 +105,34 @@
     z-index: 17;
     border-radius: 22px;
   }
+  .btn-orange{
+    background-color: #EB9341;
+    border: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #7D0EAF;
+    border-radius: 15px;
+  }
+  #flex-div{
+    display: flex;
+    justify-content: center;
+  }
   .nivel-facil {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    position: absolute;
+    justify-content: center;
+
     height: 24px;
-    right: 85px;
-    bottom: 13px;
-    color: #cec9ec;
+    right: 79px;
+    bottom: 14px;
+    color: #FFF;
     font-family: Inter, var(--default-font-family);
-    font-size: 22.799999237060547px;
-    font-weight: 600;
+    font-style: italic;
+    font-size: 22.799999237060547px;/
     line-height: 24px;
-    text-align: left;
+    text-align: center;
     white-space: nowrap;
-    z-index: 18;
+    z-index: 12;
   }
   .button-2 {
     position: relative;
@@ -145,19 +157,19 @@
   .nivel-medio {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    position: absolute;
+    justify-content: center;
+
     height: 24px;
-    right: 72px;
-    bottom: 13px;
-    color: #d4cfee;
+    right: 79px;
+    bottom: 14px;
+    color: #FFF;
     font-family: Inter, var(--default-font-family);
-    font-size: 21.5px;
-    font-weight: 600;
+    font-style: italic;
+    font-size: 22.799999237060547px;/
     line-height: 24px;
-    text-align: left;
+    text-align: center;
     white-space: nowrap;
-    z-index: 15;
+    z-index: 12;
   }
   .button-4 {
     position: relative;
@@ -182,17 +194,17 @@
   .nivel-dificil {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    position: absolute;
+    justify-content: center;
+
     height: 24px;
     right: 79px;
     bottom: 14px;
-    color: #d4d0ef;
+    color: #FFF;
     font-family: Inter, var(--default-font-family);
-    font-size: 22.799999237060547px;
-    font-weight: 600;
+    font-style: italic;
+    font-size: 22.799999237060547px;/
     line-height: 24px;
-    text-align: left;
+    text-align: center;
     white-space: nowrap;
     z-index: 12;
   }
@@ -217,25 +229,27 @@
   }
   .button-8 {
     position: absolute;
+    margin-bottom: 20px;
     width: 94px;
     height: 33px;
     right: 41px;
     bottom: 108px;
     cursor: pointer;
-    background: transparent;
-    background: no-repeat center;
+    /* background: transparent;
+    background: no-repeat center; */
     background-size: cover;
     border: none;
     z-index: 6;
   }
   .button-9 {
+    margin-bottom: 10px;
     position: absolute;
     width: 93px;
     height: 32px;
     right: 42px;
     bottom: 76px;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0);
+    /* background: rgba(0, 0, 0, 0); */
     border: none;
     z-index: 3;
   }
@@ -273,8 +287,8 @@
     right: 41px;
     bottom: 43px;
     cursor: pointer;
-    background: transparent;
-    background: no-repeat center;
+    /* background: transparent;
+    background: no-repeat center; */
     background-size: cover;
     border: none;
     z-index: 2;
