@@ -1,0 +1,296 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 414px;
+    height: 896px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  .root {
+    position: absolute;
+    height: 896px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+  }
+  .background {
+    position: relative;
+    width: 413px;
+    height: 234px;
+    margin: 0 0 0 0;
+    background: #d33333;
+    z-index: 2;
+    overflow: visible auto;
+  }
+  .groups {
+    position: relative;
+    width: 414px;
+    height: 71px;
+    margin: 29px 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 20;
+  }
+  .image {
+    position: absolute;
+    width: 17px;
+    height: 32px;
+    right: 356px;
+    bottom: 18px;
+    background: url(./assets/images/b2f69524a37dcf16c939e9e416618c43df6367b7.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 22;
+  }
+  .image-1 {
+    position: absolute;
+    width: 42px;
+    height: 25px;
+    right: 41px;
+    bottom: 22px;
+    background: url(./assets/images/ef1d3eaf7503c63b6551f33b78849e7bde0528b6.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 21;
+  }
+  .groups-2 {
+    position: relative;
+    width: 414px;
+    height: 137px;
+    margin: -2px 0 0 0;
+    font-size: 0px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 17;
+    overflow: visible auto;
+  }
+  .forgot {
+    display: block;
+    position: relative;
+    height: 35px;
+    margin: 19px 0 0 44px;
+    color: #f5e4e4;
+    font-family: Inter, var(--default-font-family);
+    font-size: 33.900001525878906px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 19;
+  }
+  .password {
+    display: block;
+    position: relative;
+    height: 32px;
+    margin: 15px 0 0 43px;
+    color: #fbf3f3;
+    font-family: Inter, var(--default-font-family);
+    font-size: 29.399999618530273px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 18;
+  }
+  .groups-3 {
+    position: relative;
+    width: 414px;
+    height: 403px;
+    margin: 16px 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 7;
+    overflow: visible auto;
+  }
+  .image-4 {
+    position: relative;
+    width: 75px;
+    height: 85px;
+    margin: 19px 0 0 169px;
+    background: url(./assets/images/bb2a26fe0e0455b850becda5b677924bbd8ae119.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 16;
+  }
+  .trouble-logging {
+    display: block;
+    position: relative;
+    height: 23px;
+    margin: 35px 0 0 108px;
+    color: #181818;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18.600000381469727px;
+    font-weight: 600;
+    line-height: 22.51px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 15;
+  }
+  .enter-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 285px;
+    height: 42px;
+    margin: 20px 0 0 65px;
+    color: #484848;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16.5px;
+    font-weight: 600;
+    line-height: 19.969px;
+    text-align: center;
+    text-overflow: initial;
+    z-index: 14;
+    overflow: hidden;
+  }
+  .text {
+    position: relative;
+    width: 334px;
+    height: 59px;
+    margin: 35px 0 0 39px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 11;
+    overflow: visible auto;
+  }
+  .background-5 {
+    position: relative;
+    width: 326px;
+    height: 51px;
+    margin: 5px 0 0 5px;
+    background: #ffffff;
+    z-index: 12;
+    overflow: hidden;
+    border-radius: 22px;
+  }
+  .email {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 17px;
+    right: 245px;
+    bottom: 21px;
+    color: #bababa;
+    font-family: Inter, var(--default-font-family);
+    font-size: 14.5px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 13;
+  }
+  .button {
+    position: relative;
+    width: 334px;
+    height: 59px;
+    margin: 21px 0 0 39px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 8;
+    overflow: visible auto;
+  }
+  .background-6 {
+    position: relative;
+    width: 328px;
+    height: 52px;
+    margin: 4px 0 0 4px;
+    cursor: pointer;
+    background: #8376d1;
+    border: none;
+    z-index: 9;
+    border-radius: 23px;
+  }
+  .reset-password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 22px;
+    right: 76px;
+    bottom: 17px;
+    color: #e5e2f5;
+    font-family: Inter, var(--default-font-family);
+    font-size: 20.399999618530273px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  .groups-7 {
+    position: relative;
+    width: 414px;
+    height: 64px;
+    margin: 179px 0 0 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    z-index: 1;
+  }
+  .button-8 {
+    position: absolute;
+    width: 414px;
+    height: 64px;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 3;
+  }
+  .background-9 {
+    position: relative;
+    width: 413px;
+    height: 63px;
+    margin: 0 0 0 0;
+    background: #d33333;
+    z-index: 4;
+  }
+  .return-to-login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 25px;
+    right: 93px;
+    bottom: 15px;
+    color: #f5d3d3;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18.600000381469727px;
+    font-weight: 600;
+    line-height: 22.51px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 5;
+  }
+  .background-a {
+    position: absolute;
+    width: 414px;
+    height: 836px;
+    right: 0;
+    bottom: 60px;
+    background: url(./assets/images/e3958ac46ee96aa2b9d25810989a009153ad6f0a.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 6;
+  }
+  

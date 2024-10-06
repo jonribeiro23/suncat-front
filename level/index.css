@@ -1,0 +1,282 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 414px;
+    height: 896px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  .root {
+    position: absolute;
+    height: 896px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+  }
+  .background {
+    position: relative;
+    width: 413px;
+    height: 895px;
+    margin: 0 0 0 0;
+    background: #e8e8e8;
+    z-index: 1;
+    overflow: visible auto;
+  }
+  .groups {
+    position: relative;
+    width: 414px;
+    height: 289px;
+    margin: 78px 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9;
+    overflow: visible auto;
+  }
+  .image {
+    position: relative;
+    width: 185px;
+    height: 38px;
+    margin: 11px 0 0 114px;
+    cursor: pointer;
+    background: transparent;
+    background: no-repeat center;
+    background-size: cover;
+    border: none;
+    z-index: 19;
+    border-radius: 12px;
+  }
+  .leuel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 25px;
+    right: 62px;
+    bottom: 7px;
+    color: #942898;
+    font-family: Inter, var(--default-font-family);
+    font-size: 25.600000381469727px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 20;
+  }
+  .button {
+    position: relative;
+    width: 293px;
+    height: 52px;
+    margin: 40px 0 0 60px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 16;
+    overflow: visible auto;
+  }
+  .background-1 {
+    position: relative;
+    width: 287px;
+    height: 44px;
+    margin: 5px 0 0 4px;
+    cursor: pointer;
+    background: #8376d1;
+    border: none;
+    z-index: 17;
+    border-radius: 22px;
+  }
+  .nivel-facil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    right: 85px;
+    bottom: 13px;
+    color: #cec9ec;
+    font-family: Inter, var(--default-font-family);
+    font-size: 22.799999237060547px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 18;
+  }
+  .button-2 {
+    position: relative;
+    width: 294px;
+    height: 52px;
+    margin: 20px 0 0 59px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 13;
+    overflow: visible auto;
+  }
+  .background-3 {
+    position: relative;
+    width: 286px;
+    height: 44px;
+    margin: 5px 0 0 5px;
+    cursor: pointer;
+    background: #8376d1;
+    border: none;
+    z-index: 14;
+    border-radius: 18px;
+  }
+  .nivel-medio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    right: 72px;
+    bottom: 13px;
+    color: #d4cfee;
+    font-family: Inter, var(--default-font-family);
+    font-size: 21.5px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 15;
+  }
+  .button-4 {
+    position: relative;
+    width: 294px;
+    height: 52px;
+    margin: 20px 0 0 59px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 10;
+    overflow: visible auto;
+  }
+  .background-5 {
+    position: relative;
+    width: 287px;
+    height: 45px;
+    margin: 5px 0 0 5px;
+    cursor: pointer;
+    background: #8376d1;
+    border: none;
+    z-index: 11;
+    border-radius: 22px;
+  }
+  .nivel-dificil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    right: 79px;
+    bottom: 14px;
+    color: #d4d0ef;
+    font-family: Inter, var(--default-font-family);
+    font-size: 22.799999237060547px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 12;
+  }
+  .groups-6 {
+    position: absolute;
+    width: 213px;
+    height: 202px;
+    right: 170px;
+    bottom: 24px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 7;
+  }
+  .image-7 {
+    position: relative;
+    width: 159px;
+    height: 169px;
+    margin: 15px 0 0 18px;
+    background: url(./assets/images/0ab741a1fb2c04ce15f4b023368014817ccd23df.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 8;
+  }
+  .button-8 {
+    position: absolute;
+    width: 94px;
+    height: 33px;
+    right: 41px;
+    bottom: 108px;
+    cursor: pointer;
+    background: transparent;
+    background: no-repeat center;
+    background-size: cover;
+    border: none;
+    z-index: 6;
+  }
+  .button-9 {
+    position: absolute;
+    width: 93px;
+    height: 32px;
+    right: 42px;
+    bottom: 76px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    z-index: 3;
+  }
+  .background-a {
+    position: relative;
+    width: 89px;
+    height: 28px;
+    margin: 3px 0 0 3px;
+    background: url(./assets/images/3b5361e6e49e4f8e3dc2ba8089f92c3b7cd04e65.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 4;
+  }
+  .back {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 17px;
+    right: 17px;
+    bottom: 7px;
+    color: #972c95;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18.899999618530273px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 5;
+  }
+  .button-b {
+    position: absolute;
+    width: 94px;
+    height: 33px;
+    right: 41px;
+    bottom: 43px;
+    cursor: pointer;
+    background: transparent;
+    background: no-repeat center;
+    background-size: cover;
+    border: none;
+    z-index: 2;
+  }
+  

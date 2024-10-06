@@ -1,0 +1,300 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 414px;
+    height: 896px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  .root {
+    position: absolute;
+    height: 896px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+  }
+  .button {
+    position: relative;
+    width: 414px;
+    height: 235px;
+    margin: 0 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+    overflow: visible auto;
+  }
+  .background {
+    position: relative;
+    width: 413px;
+    height: 234px;
+    margin: 0 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 4;
+    overflow: visible auto;
+  }
+  .groups {
+    position: relative;
+    width: 414px;
+    height: 68px;
+    margin: 32px 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 3;
+  }
+  .image {
+    position: absolute;
+    width: 17px;
+    height: 32px;
+    right: 356px;
+    bottom: 18px;
+    background: url(./assets/images/962962b2b20ae4bc7a971d8cb1b2fa40ebec7761.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 37;
+  }
+  .image-1 {
+    position: absolute;
+    width: 42px;
+    height: 24px;
+    right: 41px;
+    bottom: 23px;
+    background: url(./assets/images/d1f06be49e88fe234fa93448aea0e78b0fbd3158.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 36;
+  }
+  .groups-2 {
+    position: relative;
+    width: 414px;
+    height: 130px;
+    margin: 5px 0 0 0;
+    font-size: 0px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 2;
+    overflow: visible auto;
+  }
+  .create-account {
+    display: block;
+    position: relative;
+    height: 37px;
+    margin: 15px 0 0 42px;
+    color: #f4f3fa;
+    font-family: Inter, var(--default-font-family);
+    font-size: 34.900001525878906px;
+    font-weight: 600;
+    line-height: 37px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 35;
+  }
+  .your-account {
+    display: block;
+    position: relative;
+    height: 36px;
+    margin: 11px 0 0 40px;
+    color: #fafafd;
+    font-family: Inter, var(--default-font-family);
+    font-size: 29.399999618530273px;
+    font-weight: 600;
+    line-height: 35.581px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 34;
+  }
+  .groups-3 {
+    position: relative;
+    width: 414px;
+    height: 525px;
+    margin: 43px 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 6;
+    overflow: visible auto;
+  }
+  .groups-4 {
+    position: relative;
+    width: 414px;
+    height: 82px;
+    margin: 0 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 30;
+    overflow: visible auto;
+  }
+  .text {
+    position: relative;
+    width: 334px;
+    height: 60px;
+    margin: 15px 0 0 39px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 31;
+    overflow: visible auto;
+  }
+  .background-5 {
+    position: relative;
+    width: 326px;
+    height: 52px;
+    margin: 5px 0 0 5px;
+    background: #ffffff;
+    z-index: 32;
+    overflow: hidden;
+    border-radius: 22px;
+  }
+  .email {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 17px;
+    right: 245px;
+    bottom: 21px;
+    color: #bababa;
+    font-family: Inter, var(--default-font-family);
+    font-size: 14.5px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 33;
+  }
+  .groups-6 {
+    position: relative;
+    width: 414px;
+    height: 83px;
+    margin: 1px 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 26;
+    overflow: visible auto;
+  }
+  .text-7 {
+    position: relative;
+    width: 334px;
+    height: 60px;
+    margin: 19px 0 0 39px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 27;
+    overflow: visible auto;
+  }
+  .background-8 {
+    position: relative;
+    width: 326px;
+    height: 52px;
+    margin: 5px 0 0 5px;
+    background: #ffffff;
+    z-index: 28;
+    overflow: hidden;
+    border-radius: 22px;
+  }
+  .full-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 18px;
+    right: 208px;
+    bottom: 20px;
+    color: #d4d4d4;
+    font-family: Inter, var(--default-font-family);
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 16.338px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 29;
+  }
+  .groups-9 {
+    position: relative;
+    width: 414px;
+    height: 79px;
+    margin: 5px 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 22;
+    overflow: visible auto;
+  }
+  .text-a {
+    position: relative;
+    width: 335px;
+    height: 59px;
+    margin: 18px 0 0 39px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 23;
+    overflow: visible auto;
+  }
+  .background-b {
+    position: relative;
+    width: 326px;
+    height: 51px;
+    margin: 5px 0 0 5px;
+    background: #fefefe;
+    z-index: 24;
+    overflow: hidden;
+    border-radius: 22px;
+  }
+  .username {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 18px;
+    right: 207px;
+    bottom: 20px;
+    color: #cdcdcd;
+    font-family: Inter, var(--default-font-family);
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 16.338px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 25;
+  }
+  .groups-c {
+    position: relative;
+    width: 414px;
+    height: 80px;
+    margin: 7px 0 0 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 16;
+    overflow: visible auto;
+  }
+  .text-d {
+    position: relative;
+    width: 334px;
+    height: 59px;
+    margin: 19px 0 0 39px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 17;
+    overflow: hidden;
+  }
+  .text-input {
+    position: absolute;
+    width: 334px;
+    height: 59px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 21;
+    outline: none;
+  }
+  .background-e {
+    position: relative;
