@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </link>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Eastman Roman Alternate';
@@ -13,15 +16,18 @@
             font-weight: bold;
             font-style: normal;
         }
+
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #e8e8e8;
         }
+
         .question-title {
             font-family: 'Eastman Roman Alternate', serif;
         }
     </style>
 </head>
+
 <body class="flex items-center justify-center min-h-screen">
     <div class="p-6 rounded-lg shadow-lg text-center w-80 h-screen">
         <!-- Score and Question Title -->
@@ -39,16 +45,20 @@
 
         <!-- Answer Buttons -->
         <div class="space-y-4" id="answers-container">
-            <button id="answer-a" class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+            <button id="answer-a"
+                class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
                 A) Loading...
             </button>
-            <button id="answer-b" class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+            <button id="answer-b"
+                class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
                 B) Loading...
             </button>
-            <button id="answer-c" class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+            <button id="answer-c"
+                class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
                 C) Loading...
             </button>
-            <button id="answer-d" class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+            <button id="answer-d"
+                class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
                 D) Loading...
             </button>
         </div>
@@ -73,8 +83,9 @@
         // Function to fetch the question and answers from the API
         async function fetchQuestionAndAnswers() {
             const myHeaders = new Headers();
+            const bearerToken = localStorage.getItem("access_token");
             myHeaders.append("Content-Type", "application/json");
-
+            myHeaders.append("Authorization", `Bearer ${bearerToken}`);
             const raw = JSON.stringify({
                 "tema": "biosphere",
                 "nivel": "2"
@@ -104,7 +115,7 @@
                 document.getElementById("answer-b").innerText = `B) ${answers.b.resposta}`;
                 document.getElementById("answer-c").innerText = `C) ${answers.c.resposta}`;
                 document.getElementById("answer-d").innerText = `D) ${answers.d.resposta}`;
-                
+
             } catch (error) {
                 console.error("Error fetching the question:", error);
                 document.getElementById("question-text").innerText = "Failed to load the question.";
@@ -115,4 +126,5 @@
         window.onload = fetchQuestionAndAnswers;
     </script>
 </body>
+
 </html>
