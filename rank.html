@@ -61,12 +61,13 @@
                                 rotate: 13deg;">
                                 </div>
                             `;
-
                         } else {
+                            if (i > 4) {
+                                continue
+                            }
                             content += `<button class='bg-[#8376d1] text-white py-2 px-8 rounded-full w-full'>${result[i].email.split("@")[0]} ${result[i].total_score} PTS</button>`
                         }
                     }
-
                 }
                 document.getElementById("ranking-data").innerHTML = content
             } catch (error) {
