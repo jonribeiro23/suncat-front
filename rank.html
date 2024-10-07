@@ -26,27 +26,7 @@
         <img alt="Pixel art button with the text 'LEVEL' and a cursor clicking on it" height="50" src="./img/levels.png"
             width="200" />
     </div>
-    <div class="space-y-4 mb-4 text-center">
-        <div>
-            <button class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
-                RUAN 5.000 PTS
-            </button>
-            <img src="./img/trofeu.webp" alt="" width="80" style="height: auto; position: absolute;
-            right: 40%;
-            top: 39%;
-            rotate: 13deg;">
-        </div>
-
-
-        <button class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
-            RUAN 4.890 PTS
-        </button>
-        <button class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
-            LIVIE 3.200 PTS
-        </button>
-        <button class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
-            DORA 2.150 PTS
-        </button>
+    <div class="space-y-4 mb-4 text-center" id="ranking-data">
     </div>
 
 
@@ -61,6 +41,40 @@
             <img src="./img/quit_button.png" alt="" width="80">
         </button>
     </div>
+    <script>
+        async function getRank() {
+            try {
+                const response = await fetch('https://sun-cat-express.vercel.app/totalscore');
+
+                const result = await response.json();
+                let content = "";
+                if (result) {
+                    for (let i = 0; i < result.length; i++) {
+                        if (i === 0) {
+                            content += `<div>
+                                <button class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
+                                    ${result[i].email.split("@")[0]} ${result[i].total_score} PTS
+                                </button>
+                                <img src="./img/trofeu.webp" alt="" width="80" style="height: auto; position: absolute;
+                                right: 40%;
+                                top: 39%;
+                                rotate: 13deg;">
+                                </div>
+                            `;
+
+                        } else {
+                            content += `<button class='bg-[#8376d1] text-white py-2 px-8 rounded-full w-full'>${result[i].email.split("@")[0]} ${result[i].total_score} PTS</button>`
+                        }
+                    }
+
+                }
+                document.getElementById("ranking-data").innerHTML = content
+            } catch (error) {
+                console.error("Houve um erro ao fazer a requisição")
+            }
+        }
+        getRank()
+    </script>
 </body>
 
 </html>
