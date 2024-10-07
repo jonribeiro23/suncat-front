@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    </link>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Eastman Roman Alternate';
@@ -16,18 +13,15 @@
             font-weight: bold;
             font-style: normal;
         }
-
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #e8e8e8;
         }
-
         .question-title {
             font-family: 'Eastman Roman Alternate', serif;
         }
     </style>
 </head>
-
 <body class="flex items-center justify-center min-h-screen">
     <div class="p-6 rounded-lg shadow-lg text-center w-80 h-screen">
         <!-- Score and Question Title -->
@@ -45,20 +39,16 @@
 
         <!-- Answer Buttons -->
         <div class="space-y-4" id="answers-container">
-            <button id="answer-a"
-                class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+            <button id="answer-a" class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left" data-answer-key="a">
                 A) Loading...
             </button>
-            <button id="answer-b"
-                class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+            <button id="answer-b" class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left" data-answer-key="b">
                 B) Loading...
             </button>
-            <button id="answer-c"
-                class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+            <button id="answer-c" class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left" data-answer-key="c">
                 C) Loading...
             </button>
-            <button id="answer-d"
-                class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left">
+            <button id="answer-d" class="bg-white text-purple-600 border border-gray-300 rounded-full py-2 px-4 w-full text-left" data-answer-key="d">
                 D) Loading...
             </button>
         </div>
@@ -80,14 +70,15 @@
     </div>
 
     <script>
+        let correctAnswer = ""; // To store the correct answer key ("a", "b", etc.)
+
         // Function to fetch the question and answers from the API
         async function fetchQuestionAndAnswers() {
             const myHeaders = new Headers();
-            const bearerToken = localStorage.getItem("access_token");
             myHeaders.append("Content-Type", "application/json");
-            myHeaders.append("Authorization", `Bearer ${bearerToken}`);
+
             const raw = JSON.stringify({
-                "tema": "biosphere",
+                "tema": "biosphere or atmosphere or hydrosphere",
                 "nivel": "2"
             });
 
@@ -107,6 +98,14 @@
                 const answers = result.answer.answers;
                 const questionId = result.answer.id;
 
+                // Find the correct answer
+                for (const key in answers) {
+                    if (answers[key].correto) {
+                        correctAnswer = key; // Store the correct answer key (a, b, c, d)
+                        break;
+                    }
+                }
+
                 // Update the DOM elements with fetched data
                 document.getElementById("question-id").innerText = questionId;
                 document.getElementById("question-text").innerText = question;
@@ -116,15 +115,58 @@
                 document.getElementById("answer-c").innerText = `C) ${answers.c.resposta}`;
                 document.getElementById("answer-d").innerText = `D) ${answers.d.resposta}`;
 
+                // Add click event listeners to the answer buttons
+                document.getElementById("answer-a").addEventListener("click", () => checkAnswer("a", answers));
+                document.getElementById("answer-b").addEventListener("click", () => checkAnswer("b", answers));
+                document.getElementById("answer-c").addEventListener("click", () => checkAnswer("c", answers));
+                document.getElementById("answer-d").addEventListener("click", () => checkAnswer("d", answers));
             } catch (error) {
                 console.error("Error fetching the question:", error);
                 document.getElementById("question-text").innerText = "Failed to load the question.";
             }
         }
 
+        // Function to check the user's answer
+        function checkAnswer(selectedAnswer, answers) {
+            const selectedButton = document.getElementById(`answer-${selectedAnswer}`);
+            // Clear previous feedback icons
+            clearFeedbackIcons();
+
+            // Check if the selected answer is correct
+            if (selectedAnswer === correctAnswer) {
+                // Correct answer feedback
+                selectedButton.innerHTML += ' <i class="fas fa-check text-green-500"></i>';
+                alert("Correct!"); // Optional: Alert for correct answer
+            } else {
+                // Incorrect answer feedback
+                selectedButton.innerHTML += ' <i class="fas fa-times text-red-500"></i>';
+                alert(`Wrong! The correct answer is: ${answers[correctAnswer].resposta}`); // Alert with correct answer
+                // Mark the correct answer
+                document.getElementById(`answer-${correctAnswer}`).innerHTML += ' <i class="fas fa-check text-green-500"></i>';
+            }
+
+            // Disable all buttons after an answer is selected
+            disableAllButtons();
+        }
+
+        // Function to clear previous feedback icons
+        function clearFeedbackIcons() {
+            const buttons = document.querySelectorAll("#answers-container button");
+            buttons.forEach(button => {
+                button.innerHTML = button.innerHTML.split('<i')[0]; // Remove icons from button
+            });
+        }
+
+        // Function to disable all answer buttons
+        function disableAllButtons() {
+            const buttons = document.querySelectorAll("#answers-container button");
+            buttons.forEach(button => {
+                button.disabled = true;
+            });
+        }
+
         // Fetch question and answers when the page loads
         window.onload = fetchQuestionAndAnswers;
     </script>
 </body>
-
 </html>
