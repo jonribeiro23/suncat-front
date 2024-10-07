@@ -1,55 +1,70 @@
 <html>
- <head>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-   body {
-     font-family: 'Press Start 2P', cursive;
-   }
-  </style>
- </head>
- <body class="bg-gray-200 flex flex-col items-center justify-center min-h-screen mx-auto">
-  <!-- Image container with responsive design -->
-  <div class="mb-4 max-w-md mx-auto">
-   <img alt="Pixel art button with the text 'LEVEL' and a cursor clicking on it" class="w-full" src="./img/levels.png" />
-  </div>
-  <!-- Button container with responsive design -->
-  <div class="space-y-4 mb-4 text-center max-w-md mx-auto">
-   <button onclick="window.location.href='./perguntas.html';" class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
-    Easy
-   </button>
-   <button onclick="window.location.href='./perguntas.html';" class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
-    Medium
-   </button>
-   <button onclick="window.location.href='./perguntas.html';" class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
-    Hard
-   </button>
-  </div>
-  <!-- Cat image container with responsive design -->
-  <!-- Menu buttons container with responsive design -->
-    <div class="flex justify-between max-w-md mx-auto mb-8 mt-20">
-        <img alt="Pixel art of a cat with a moon in the background" src="./src/img/211-269-max.png" width="100" />
 
-        <div class="flex flex-col justify-center ml-60">
-            <button
-                class="text-yellow-200 rounded-full  mb-2"
-                onclick="window.location.href='./start.html';" 
-                >
-                <img src="./img/menu_buttons.png" alt=""  width="100">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #E5E7EB;
+        }
+
+        .container {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            height: 60vh;
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen">
+
+    <!-- Main container for the entire screen content -->
+    <div class="container mx-auto p-4 max-w-lg rounded-lg">
+
+        <!-- Image container with responsive design -->
+        <div class="mb-4 flex justify-center">
+            <img alt="Pixel art button with the text 'LEVEL' and a cursor clicking on it" style="width: 40%"
+                src="./img/levels.png" />
+        </div>
+
+        <!-- Button container with responsive design -->
+        <div class="space-y-4 text-center">
+            <button onclick="window.location.href='./perguntas.html';"
+                class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
+                Easy
             </button>
-            <button
-                onclick="window.location.href='./start.html';" 
-                class="text-yellow-200 rounded-full  mb-2">
-                <img src="./img/back_buttonpng.png" alt="" width="100">
+            <button onclick="window.location.href='./perguntas.html';"
+                class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
+                Medium
             </button>
-            <button
-                onclick="window.location.href='./login.html';" 
-                class="text-yellow-200 rounded-full  mb-2">
-                <img src="./img/quit_button.png" alt="" width="100">
+            <button onclick="window.location.href='./perguntas.html';"
+                class="bg-[#8376d1] text-white py-2 px-8 rounded-full w-full">
+                Hard
             </button>
         </div>
+
+        <!-- Cat image container with responsive design -->
+        <div class="flex justify-between items-center" style="margin-top:8rem">
+            <img alt="Pixel art of a cat with a moon in the background" src="./src/img/211-269-max.png" width="100" />
+
+            <!-- Menu buttons container with responsive design -->
+            <div class="flex flex-col justify-center ml-8 space-y-2">
+                <button class="text-yellow-200 rounded-full" onclick="window.location.href='./start.html';">
+                    <img src="./img/menu_buttons.png" alt="Menu" width="100">
+                </button>
+                <button class="text-yellow-200 rounded-full" onclick="window.location.href='./start.html';">
+                    <img src="./img/back_buttonpng.png" alt="Back" width="100">
+                </button>
+                <button class="text-yellow-200 rounded-full" onclick="window.location.href='./login.html';">
+                    <img src="./img/quit_button.png" alt="Quit" width="100">
+                </button>
+            </div>
+        </div>
+
     </div>
 
- </body>
+</body>
+
 </html>
